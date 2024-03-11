@@ -1,0 +1,28 @@
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+.footer-logo img {
+    width: 50px; /* Tamaño de el logo */
+}
+
+.footer-info h4 {
+    margin: 0;
+}
+
+.footer-social a {
+    margin-left: 10px;
+}
+
+.footer-social a svg {
+    width: 32px; /* Tamaño de los iconos */
+    fill: #333; /* Color de los iconos */
+}
+
+.footer-social a:hover svg {
+    fill: #336fac; /* Cambio de color al pasar el mouse */
+}
