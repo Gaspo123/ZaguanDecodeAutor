@@ -1,28 +1,44 @@
 // _formulario.scss
 
+/* _formulario.scss */
+
 .registro-section {
     text-align: center;
     padding: 20px;
+
+    .registro-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        .registro-form {
+            width: 80%;
+            max-width: 500px;
+
+            .form-group {
+                margin-bottom: 20px;
+
+                label {
+                    /* Estilos para etiquetas de formulario */
+                }
+
+                input[type='text'],
+                input[type='email'],
+                input[type='tel'],
+                textarea {
+                    /* Estilos para campos de formulario */
+                }
+            }
+
+            .btn-enviar {
+                /* Estilos para el botón de enviar */
+            }
+        }
+    }
 }
 
-.registro-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-.registro-form {
-    width: 80%;
-    max-width: 500px;
-}
-
-.form-group {
-    margin-bottom: 20px;
-}
-
-
-
+/* Estilos para el mensaje de confirmación */
 .mensaje {
     display: none;
     position: fixed;
@@ -35,18 +51,18 @@
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     z-index: 1000;
-}
 
-.mensaje p {
-    font-size: small;
-    margin-bottom: 10px;
-}
+    p {
+        font-size: small;
+        margin-bottom: 10px;
+    }
 
-.mensaje button {
-    width: 10px;
-    height: 20px;
-}
+    button {
+        width: 10px;
+        height: 20px;
+    }
 
-.mensaje-oculto p {
-    font-size: larger;
+    .mensaje-oculto p {
+        font-size: larger;
+    }
 }

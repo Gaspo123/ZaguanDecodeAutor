@@ -1,0 +1,17 @@
+ /* Servicios */
+ 
+.video-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    .video-container {
+        margin-bottom: 20px; /* Espacio entre el video y la descripción */
+    }
+
+    .description {
+        max-width: 600px; /* Ancho máximo del párrafo */
+    }
+}

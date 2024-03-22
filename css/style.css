@@ -124,6 +124,7 @@
   .titulo-principal {
     font-size: 24px;
   }
+  
   .nav-menu-container {
     display: none;
     position: absolute;
@@ -133,17 +134,21 @@
     background-color: #333;
     padding: 20px;
   }
+
   .nav-menu-container.active {
     display: flex;
     flex-direction: column;
   }
+
   .navbar li {
     margin: 10px 0;
   }
+
   .menu-btn {
     display: block;
   }
 }
+  /* Header */
 .header-container {
   display: flex;
   justify-content: space-between;
@@ -153,34 +158,41 @@
   color: #333;
   flex-wrap: wrap;
 }
+
 .header-container .logo-container {
   padding: 0;
 }
+
 .header-container .logo-container .logo {
   width: 150px;
   height: auto;
 }
+
 .header-container .titulo-principal {
   margin: 0;
   font-size: 24px;
 }
+
 .header-container .nav-menu-container {
   display: flex;
   align-items: center;
 }
+
 .header-container .nav-menu-container .navbar {
   list-style-type: none;
   margin: 0;
   padding: 0;
   display: flex;
 }
+
 .header-container .menu-btn {
   display: none;
   cursor: pointer;
   font-size: 24px;
   color: #cc1a1a;
 }
-
+  /* Fin Header */
+  /* Productos mas vendidos */
 .producto {
   display: inline-block;
   width: 200px;
@@ -318,3 +330,89 @@
 }
 
 /*# sourceMappingURL=style.css.map */
+
+* { 
+  text-decoration: none;
+}
+
+/* AllProducts ----> Sección */
+
+/* Estilos para la sección de productos */
+.sección-container {
+  display: flex;
+  justify-content: center; /* Centrar horizontalmente */
+  align-items: center; /* Centrar verticalmente */
+  padding: 20px;
+}
+
+.imagenes-container {
+  display: flex;
+  flex-direction: column; /* Mostrar las imágenes en una columna */
+  align-items: center; /* Centrar horizontalmente */
+}
+
+/* Estilos para cada grupo de productos */
+.almohadones-5,
+.mantas-5,
+.mates-5,
+.espejos-5,
+.alfombras-5,
+.lámparas-5 {
+  width: 50%; /* Ancho completo */
+  margin-bottom: 40px; /* Espacio entre grupos de productos */
+  text-align: center; /* Centrar texto */
+}
+
+/* Estilos para el título */
+.almohadones-5 p,
+.mantas-5 p,
+.mates-5 p,
+.espejos-5 p,
+.alfombras-5 p,
+.lámparas-5 p {
+  margin-bottom: 20px; /* Espacio entre el título y las imágenes */
+}
+
+/* Estilos para las imágenes */
+.almohadones-5 img,
+.mantas-5 img,
+.mates-5 img,
+.espejos-5 img,
+.alfombras-5 img,
+.lámparas-5 img {
+  width: 100%; /* Ancho completo */
+  height: auto; /* Mantener la proporción de la imagen */
+  margin-bottom: 10px; /* Espacio entre imágenes */
+  transition: transform 0.3s ease; /* Animación al pasar el mouse */
+}
+
+/* Agrandar la imagen al pasar el mouse */
+.almohadones-5 img:hover,
+.mantas-5 img:hover,
+.mates-5 img:hover,
+.espejos-5 img:hover,
+.alfombras-5 img:hover,
+.lámparas-5 img:hover {
+  transform: scale(1.1);
+}
+
+
+ /* Servicios */
+
+ .video-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.video-container {
+  margin-bottom: 20px; /* Espacio entre el video y la descripción */
+}
+
+.description {
+  max-width: 600px; /* Ancho máximo del párrafo */
+}
+
+
