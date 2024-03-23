@@ -1,0 +1,37 @@
+/* Estilos para la sección de productos */
+.sección-container {
+    display: flex;
+    justify-content: center; // Centrar horizontalmente
+    align-items: center; // Centrar verticalmente
+    padding: 20px;
+  
+    .imagenes-container {
+      display: flex;
+      flex-direction: column; // Mostrar las imágenes en una columna
+      align-items: center; // Centrar horizontalmente
+  
+      // Estilos para cada grupo de productos
+      & > div {
+        width: 50%; // Ancho completo
+        margin-bottom: 40px; // Espacio entre grupos de productos
+        text-align: center; // Centrar texto
+  
+        p {
+          margin-bottom: 20px; // Espacio entre el título y las imágenes
+        }
+  
+        img {
+          width: 100%; // Ancho completo
+          height: auto; // Mantener la proporción de la imagen
+          margin-bottom: 10px; // Espacio entre imágenes
+          transition: transform 0.3s ease; // Animación al pasar el mouse
+  
+          // Agrandar la imagen al pasar el mouse
+          &:hover {
+            transform: scale(1.1);
+          }
+        }
+      }
+    }
+  }
+  

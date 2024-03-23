@@ -19,15 +19,18 @@
     }
 
     .titulo-principal {
+        font-family: verdana;
         margin: 0;
         font-size: 24px;
     }
 
     .nav-menu-container {
+        flex: 1;
         display: flex;
         align-items: center;
 
         .navbar {
+            font-family: sans-serif;
             list-style-type: none;
             margin: 0;
             padding: 0;
