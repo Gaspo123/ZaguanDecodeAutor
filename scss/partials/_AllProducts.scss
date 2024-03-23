@@ -1,4 +1,5 @@
-/* Estilos para la sección de productos */
+/* _AllProducts.scss */
+
 .sección-container {
     display: flex;
     justify-content: center; // Centrar horizontalmente
@@ -20,9 +21,9 @@
           margin-bottom: 20px; // Espacio entre el título y las imágenes
         }
   
-        img {
-          width: 100%; // Ancho completo
-          height: auto; // Mantener la proporción de la imagen
+        .imagenes-AllProducts {
+          width: 50%; // Ancho completo
+          height: 50%; // Mantener la proporción de la imagen
           margin-bottom: 10px; // Espacio entre imágenes
           transition: transform 0.3s ease; // Animación al pasar el mouse
   
