@@ -192,6 +192,7 @@
   color: #cc1a1a;
 }
   /* Fin Header */
+
   /* Productos mas vendidos */
 .producto {
   display: inline-block;
@@ -399,7 +400,7 @@
 
  /* Servicios */
 
- .video-section {
+.video-section {
   display: flex;
   flex-direction: column;
   align-items: center;
